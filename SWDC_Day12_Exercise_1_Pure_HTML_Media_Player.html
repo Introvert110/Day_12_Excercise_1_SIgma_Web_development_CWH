@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day12_SWDC</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@400;500;700;800&family=Poppins:wght@200;300&family=Roboto:wght@300&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      color: rgb(22, 216, 22);
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+
+    ul li {
+      list-style: none;
+      display: inline-block\;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    audio {
+      margin: 6px;
+      margin-left: 55px;
+    }
+
+    .audio {
+      border: 2px solid;
+      padding: 15px;
+    }
+
+    .video {
+      border: 2px solid;
+      padding: 15px;
+    }
+
+    .end{
+     font-size: 10px;
+     text-align: center;
+     margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- You're given 12 files: 6 audio and 6 video
+  Design a website using HTML Only which shows these 12 files.
+  Audio Files: 1.mp3, 2.mp3 ... 6.mp3
+  Video Files: 1.mp4, 2.mp4 ... 6.mp4 -->
+
+  <center>
+    <h1>Viral/Trending Audio-Video Page</h1>
+  </center>
+
+  <center>
+    <span><a href="#audio">Audio |</a></span>
+    <span><a href="#video">Video</a></span>
+  </center>
+
+
+  <h2 id="video">Videos</h2>
+  <div class="video">
+    <video src="videos/2.mp4" height="340" controls></video>
+    <video src="videos/3.mp4" height="340" controls></video>
+    <video src="videos/4.mp4" height="340" controls></video>
+    <video src="videos/5.mp4" height="340" controls></video>
+    <video src="videos/6.mp4" height="340" controls></video>
+    <video src="videos/1.mp4" height="340" controls></video>
+  </div>
+  <h2>Audio</h2>
+  <div id="audio" class="audio">
+    <audio src="audio/fav1.mp3" controls></audio>
+    <audio src="audio/fav2.mp3" controls></audio>
+    <audio src="audio/fav3.mp3" controls></audio>
+    <audio src="audio/fav4.mp3" controls></audio>
+    <audio src="audio/fav5.mp3" controls></audio>
+    <audio src="audio/fav6.mp3" controls></audio>
+  </div>
+
+  <footer>
+    <center>
+      <span><a href="#audio">Audio |</a></span>
+      <span><a href="#video">Video</a></span>
+    </center>
+
+    <div class="end">
+     <p> &#169; Copyrighted - 2023</p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    // alert("Welcome to Trending Audio/Video Page")
+  </script>
+</body>
+
+</html>
